@@ -1,0 +1,483 @@
+{
+    "sources": [
+        {
+            "id": "spaced",
+            "label": "spaced",
+            "fingerprint": "ad28b13241fabd4b5407da433675a169393a339c5ff52db9cb2b1de28c67a09a",
+            "evidence": {
+                "runs": [
+                    {
+                        "id": "run",
+                        "producer": "example",
+                        "source_run": "spaced",
+                        "properties": {},
+                        "status": "finished",
+                        "reason": "completed"
+                    }
+                ],
+                "sequences": [
+                    {
+                        "id": "sequence",
+                        "test_run": "run",
+                        "sequence_index": 1,
+                        "source_sequence": "sequence",
+                        "properties": {},
+                        "status": "finished",
+                        "reason": "completed"
+                    }
+                ],
+                "observations": [
+                    {
+                        "id": "observation",
+                        "test_sequence": "sequence",
+                        "observation_index": 1,
+                        "timestamp_micros": 1,
+                        "recorded_state": {
+                            "id": "state",
+                            "properties": {
+                                "text": "\ufeff\u00a0 CAF\u00c9\t\u2003WORLD\n\u2028 "
+                            },
+                            "widgets": [],
+                            "capture": "complete"
+                        },
+                        "available_action_scope": "unknown",
+                        "available_actions": [],
+                        "artifacts": []
+                    }
+                ],
+                "actions": [],
+                "executions": []
+            }
+        },
+        {
+            "id": "plain",
+            "label": "plain",
+            "fingerprint": "da1a059937fffddb52286999a07b86f76e1d85efade7140f00c082c289779c48",
+            "evidence": {
+                "runs": [
+                    {
+                        "id": "run",
+                        "producer": "example",
+                        "source_run": "plain",
+                        "properties": {},
+                        "status": "finished",
+                        "reason": "completed"
+                    }
+                ],
+                "sequences": [
+                    {
+                        "id": "sequence",
+                        "test_run": "run",
+                        "sequence_index": 1,
+                        "source_sequence": "sequence",
+                        "properties": {},
+                        "status": "finished",
+                        "reason": "completed"
+                    }
+                ],
+                "observations": [
+                    {
+                        "id": "observation",
+                        "test_sequence": "sequence",
+                        "observation_index": 1,
+                        "timestamp_micros": 1,
+                        "recorded_state": {
+                            "id": "state",
+                            "properties": {
+                                "text": "caf\u00e9 world"
+                            },
+                            "widgets": [],
+                            "capture": "complete"
+                        },
+                        "available_action_scope": "unknown",
+                        "available_actions": [],
+                        "artifacts": []
+                    }
+                ],
+                "actions": [],
+                "executions": []
+            }
+        },
+        {
+            "id": "combining",
+            "label": "combining",
+            "fingerprint": "8d199c71af664f824d49ec95d6c7549796a5c886427c532387edb124a6227db5",
+            "evidence": {
+                "runs": [
+                    {
+                        "id": "run",
+                        "producer": "example",
+                        "source_run": "combining",
+                        "properties": {},
+                        "status": "finished",
+                        "reason": "completed"
+                    }
+                ],
+                "sequences": [
+                    {
+                        "id": "sequence",
+                        "test_run": "run",
+                        "sequence_index": 1,
+                        "source_sequence": "sequence",
+                        "properties": {},
+                        "status": "finished",
+                        "reason": "completed"
+                    }
+                ],
+                "observations": [
+                    {
+                        "id": "observation",
+                        "test_sequence": "sequence",
+                        "observation_index": 1,
+                        "timestamp_micros": 1,
+                        "recorded_state": {
+                            "id": "state",
+                            "properties": {
+                                "text": "cafe\u0301 world"
+                            },
+                            "widgets": [],
+                            "capture": "complete"
+                        },
+                        "available_action_scope": "unknown",
+                        "available_actions": [],
+                        "artifacts": []
+                    }
+                ],
+                "actions": [],
+                "executions": []
+            }
+        },
+        {
+            "id": "next-line",
+            "label": "next-line",
+            "fingerprint": "d4a4eaf57e808f2ee0f642606aa474f848baf7f9f5e7a756674c751c62e11b18",
+            "evidence": {
+                "runs": [
+                    {
+                        "id": "run",
+                        "producer": "example",
+                        "source_run": "next-line",
+                        "properties": {},
+                        "status": "finished",
+                        "reason": "completed"
+                    }
+                ],
+                "sequences": [
+                    {
+                        "id": "sequence",
+                        "test_run": "run",
+                        "sequence_index": 1,
+                        "source_sequence": "sequence",
+                        "properties": {},
+                        "status": "finished",
+                        "reason": "completed"
+                    }
+                ],
+                "observations": [
+                    {
+                        "id": "observation",
+                        "test_sequence": "sequence",
+                        "observation_index": 1,
+                        "timestamp_micros": 1,
+                        "recorded_state": {
+                            "id": "state",
+                            "properties": {
+                                "text": "\u0085caf\u00e9 world\u0085"
+                            },
+                            "widgets": [],
+                            "capture": "complete"
+                        },
+                        "available_action_scope": "unknown",
+                        "available_actions": [],
+                        "artifacts": []
+                    }
+                ],
+                "actions": [],
+                "executions": []
+            }
+        },
+        {
+            "id": "zero-width",
+            "label": "zero-width",
+            "fingerprint": "372b0aa581c039eaa1b4abf8290ecbae32a4072619b5b91f68d3368288b0a1e4",
+            "evidence": {
+                "runs": [
+                    {
+                        "id": "run",
+                        "producer": "example",
+                        "source_run": "zero-width",
+                        "properties": {},
+                        "status": "finished",
+                        "reason": "completed"
+                    }
+                ],
+                "sequences": [
+                    {
+                        "id": "sequence",
+                        "test_run": "run",
+                        "sequence_index": 1,
+                        "source_sequence": "sequence",
+                        "properties": {},
+                        "status": "finished",
+                        "reason": "completed"
+                    }
+                ],
+                "observations": [
+                    {
+                        "id": "observation",
+                        "test_sequence": "sequence",
+                        "observation_index": 1,
+                        "timestamp_micros": 1,
+                        "recorded_state": {
+                            "id": "state",
+                            "properties": {
+                                "text": "\u200bcaf\u00e9 world\u200b"
+                            },
+                            "widgets": [],
+                            "capture": "complete"
+                        },
+                        "available_action_scope": "unknown",
+                        "available_actions": [],
+                        "artifacts": []
+                    }
+                ],
+                "actions": [],
+                "executions": []
+            }
+        },
+        {
+            "id": "dotted-uppercase",
+            "label": "dotted-uppercase",
+            "fingerprint": "58f69ec269ea76c29f869968088d16c91aa87c35c32ab4f155df3fc104888666",
+            "evidence": {
+                "runs": [
+                    {
+                        "id": "run",
+                        "producer": "example",
+                        "source_run": "dotted-uppercase",
+                        "properties": {},
+                        "status": "finished",
+                        "reason": "completed"
+                    }
+                ],
+                "sequences": [
+                    {
+                        "id": "sequence",
+                        "test_run": "run",
+                        "sequence_index": 1,
+                        "source_sequence": "sequence",
+                        "properties": {},
+                        "status": "finished",
+                        "reason": "completed"
+                    }
+                ],
+                "observations": [
+                    {
+                        "id": "observation",
+                        "test_sequence": "sequence",
+                        "observation_index": 1,
+                        "timestamp_micros": 1,
+                        "recorded_state": {
+                            "id": "state",
+                            "properties": {
+                                "text": "\u0130STANBUL"
+                            },
+                            "widgets": [],
+                            "capture": "complete"
+                        },
+                        "available_action_scope": "unknown",
+                        "available_actions": [],
+                        "artifacts": []
+                    }
+                ],
+                "actions": [],
+                "executions": []
+            }
+        },
+        {
+            "id": "dotted-lowercase",
+            "label": "dotted-lowercase",
+            "fingerprint": "b1e74668d5436d0a29bad447e7159873cd472108ccb1dd5a7c5a726cc853a411",
+            "evidence": {
+                "runs": [
+                    {
+                        "id": "run",
+                        "producer": "example",
+                        "source_run": "dotted-lowercase",
+                        "properties": {},
+                        "status": "finished",
+                        "reason": "completed"
+                    }
+                ],
+                "sequences": [
+                    {
+                        "id": "sequence",
+                        "test_run": "run",
+                        "sequence_index": 1,
+                        "source_sequence": "sequence",
+                        "properties": {},
+                        "status": "finished",
+                        "reason": "completed"
+                    }
+                ],
+                "observations": [
+                    {
+                        "id": "observation",
+                        "test_sequence": "sequence",
+                        "observation_index": 1,
+                        "timestamp_micros": 1,
+                        "recorded_state": {
+                            "id": "state",
+                            "properties": {
+                                "text": "i\u0307stanbul"
+                            },
+                            "widgets": [],
+                            "capture": "complete"
+                        },
+                        "available_action_scope": "unknown",
+                        "available_actions": [],
+                        "artifacts": []
+                    }
+                ],
+                "actions": [],
+                "executions": []
+            }
+        },
+        {
+            "id": "sharp-s",
+            "label": "sharp-s",
+            "fingerprint": "c7217ca24704c20759db1e9fd321b065c70b1392bb00553f26aaeaf7b6e75118",
+            "evidence": {
+                "runs": [
+                    {
+                        "id": "run",
+                        "producer": "example",
+                        "source_run": "sharp-s",
+                        "properties": {},
+                        "status": "finished",
+                        "reason": "completed"
+                    }
+                ],
+                "sequences": [
+                    {
+                        "id": "sequence",
+                        "test_run": "run",
+                        "sequence_index": 1,
+                        "source_sequence": "sequence",
+                        "properties": {},
+                        "status": "finished",
+                        "reason": "completed"
+                    }
+                ],
+                "observations": [
+                    {
+                        "id": "observation",
+                        "test_sequence": "sequence",
+                        "observation_index": 1,
+                        "timestamp_micros": 1,
+                        "recorded_state": {
+                            "id": "state",
+                            "properties": {
+                                "text": "Stra\u00dfe"
+                            },
+                            "widgets": [],
+                            "capture": "complete"
+                        },
+                        "available_action_scope": "unknown",
+                        "available_actions": [],
+                        "artifacts": []
+                    }
+                ],
+                "actions": [],
+                "executions": []
+            }
+        },
+        {
+            "id": "double-s",
+            "label": "double-s",
+            "fingerprint": "8aa957aefedf35c161e9b407c2f173ada8d1a3f7cc0acbd98d4e5aa6ba933e81",
+            "evidence": {
+                "runs": [
+                    {
+                        "id": "run",
+                        "producer": "example",
+                        "source_run": "double-s",
+                        "properties": {},
+                        "status": "finished",
+                        "reason": "completed"
+                    }
+                ],
+                "sequences": [
+                    {
+                        "id": "sequence",
+                        "test_run": "run",
+                        "sequence_index": 1,
+                        "source_sequence": "sequence",
+                        "properties": {},
+                        "status": "finished",
+                        "reason": "completed"
+                    }
+                ],
+                "observations": [
+                    {
+                        "id": "observation",
+                        "test_sequence": "sequence",
+                        "observation_index": 1,
+                        "timestamp_micros": 1,
+                        "recorded_state": {
+                            "id": "state",
+                            "properties": {
+                                "text": "STRASSE"
+                            },
+                            "widgets": [],
+                            "capture": "complete"
+                        },
+                        "available_action_scope": "unknown",
+                        "available_actions": [],
+                        "artifacts": []
+                    }
+                ],
+                "actions": [],
+                "executions": []
+            }
+        }
+    ],
+    "selected_runs": [
+        {
+            "source": "spaced",
+            "run": "run"
+        },
+        {
+            "source": "plain",
+            "run": "run"
+        },
+        {
+            "source": "combining",
+            "run": "run"
+        },
+        {
+            "source": "next-line",
+            "run": "run"
+        },
+        {
+            "source": "zero-width",
+            "run": "run"
+        },
+        {
+            "source": "dotted-uppercase",
+            "run": "run"
+        },
+        {
+            "source": "dotted-lowercase",
+            "run": "run"
+        },
+        {
+            "source": "sharp-s",
+            "run": "run"
+        },
+        {
+            "source": "double-s",
+            "run": "run"
+        }
+    ]
+}

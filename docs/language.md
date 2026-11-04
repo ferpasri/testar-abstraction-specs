@@ -17,7 +17,7 @@ A definition selects at least one state field or a widget comparison. Unknown st
 
 ## Comparison fields
 
-Each field has a `name` and a nonempty `keys` list. Keys are literal property names tried in order; the first property present in the supplied JSON object supplies the value. `path` optionally follows nested keys within that value. `required` rejects a missing value; optional missing values remain distinct from JSON null. `transforms` applies the selected string operations in order.
+Each field has a `name` and a nonempty `keys` list. Keys are literal property names tried in order; the first property present in the supplied JSON object supplies the value. `path` optionally follows nested keys within that value. Once a property is selected, a missing nested key produces a missing value; selection does not restart with the next property name. `required` rejects a missing value; optional missing values remain distinct from JSON null. `transforms` applies the selected string operations in order.
 
 | Operation             | Behavior                                                                      |
 | --------------------- | ----------------------------------------------------------------------------- |
@@ -29,6 +29,14 @@ Each field has a `name` and a nonempty `keys` list. Keys are literal property na
 | `url`                 | Normalize an absolute URL with the explicitly selected removal options below. |
 
 String transforms reject non-string inputs. An observation with a missing required field, unsuitable value, or no usable comparison values remains unmatched with a reason. The source values remain unchanged.
+
+### Comparing values and text
+
+Object properties are compared by their names and values, independently of their listing order. Array order and repeated entries participate in comparison. Numbers such as `1` and `1.0` compare equally, as do positive and negative zero. Booleans, numbers, and strings remain distinct types.
+
+For `trim` and `collapse_whitespace`, whitespace means these Unicode characters: U+0009 through U+000D, U+0020, U+00A0, U+1680, U+2000 through U+200A, U+2028, U+2029, U+202F, U+205F, U+3000, and U+FEFF. This explicit list lets implementations produce the same result across languages.
+
+`lowercase` uses Unicode lowercase conversion independently of the machine's locale. For example, `Straße` becomes `straße`, while `STRASSE` becomes `strasse`. Text retains its original character composition: an accented character and a letter followed by a combining accent remain distinct unless an explicit rule maps them.
 
 ### URL normalization
 

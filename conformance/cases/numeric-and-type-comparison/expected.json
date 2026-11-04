@@ -1,0 +1,47 @@
+{
+    "groups": [
+        [
+            {
+                "source": "integer",
+                "run": "run",
+                "observation": "observation"
+            },
+            {
+                "source": "decimal",
+                "run": "run",
+                "observation": "observation"
+            }
+        ],
+        [
+            {
+                "source": "boolean",
+                "run": "run",
+                "observation": "observation"
+            }
+        ],
+        [
+            {
+                "source": "string",
+                "run": "run",
+                "observation": "observation"
+            }
+        ],
+        [
+            {
+                "source": "zero",
+                "run": "run",
+                "observation": "observation"
+            },
+            {
+                "source": "negative-zero",
+                "run": "run",
+                "observation": "observation"
+            }
+        ]
+    ],
+    "unmatched": [],
+    "transitions": [],
+    "observation_order_links": [],
+    "unlinked_executions": [],
+    "widget_correspondences": []
+}

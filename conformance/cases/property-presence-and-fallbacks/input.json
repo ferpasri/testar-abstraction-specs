@@ -1,0 +1,403 @@
+{
+    "sources": [
+        {
+            "id": "missing",
+            "label": "missing",
+            "fingerprint": "61693a6e8e765e60f64d5085c7c990d562b1516666d0692fa0b45a0357c4c0a1",
+            "evidence": {
+                "runs": [
+                    {
+                        "id": "run",
+                        "producer": "example",
+                        "source_run": "missing",
+                        "properties": {},
+                        "status": "finished",
+                        "reason": "completed"
+                    }
+                ],
+                "sequences": [
+                    {
+                        "id": "sequence",
+                        "test_run": "run",
+                        "sequence_index": 1,
+                        "source_sequence": "sequence",
+                        "properties": {},
+                        "status": "finished",
+                        "reason": "completed"
+                    }
+                ],
+                "observations": [
+                    {
+                        "id": "observation",
+                        "test_sequence": "sequence",
+                        "observation_index": 1,
+                        "timestamp_micros": 1,
+                        "recorded_state": {
+                            "id": "state",
+                            "properties": {
+                                "common": true
+                            },
+                            "widgets": [],
+                            "capture": "complete"
+                        },
+                        "available_action_scope": "unknown",
+                        "available_actions": [],
+                        "artifacts": []
+                    }
+                ],
+                "actions": [],
+                "executions": []
+            }
+        },
+        {
+            "id": "null-parent",
+            "label": "null-parent",
+            "fingerprint": "bf76a7582137764602e2b2cf93acb4fbd0457a305b93ffa1f70b811077ae0dfc",
+            "evidence": {
+                "runs": [
+                    {
+                        "id": "run",
+                        "producer": "example",
+                        "source_run": "null-parent",
+                        "properties": {},
+                        "status": "finished",
+                        "reason": "completed"
+                    }
+                ],
+                "sequences": [
+                    {
+                        "id": "sequence",
+                        "test_run": "run",
+                        "sequence_index": 1,
+                        "source_sequence": "sequence",
+                        "properties": {},
+                        "status": "finished",
+                        "reason": "completed"
+                    }
+                ],
+                "observations": [
+                    {
+                        "id": "observation",
+                        "test_sequence": "sequence",
+                        "observation_index": 1,
+                        "timestamp_micros": 1,
+                        "recorded_state": {
+                            "id": "state",
+                            "properties": {
+                                "common": true,
+                                "preferred": null,
+                                "fallback": {
+                                    "amount": 9
+                                }
+                            },
+                            "widgets": [],
+                            "capture": "complete"
+                        },
+                        "available_action_scope": "unknown",
+                        "available_actions": [],
+                        "artifacts": []
+                    }
+                ],
+                "actions": [],
+                "executions": []
+            }
+        },
+        {
+            "id": "missing-child",
+            "label": "missing-child",
+            "fingerprint": "2ff813df39e26fd91fbf68d04c31a77c50070dee76561a454a525a66b852e450",
+            "evidence": {
+                "runs": [
+                    {
+                        "id": "run",
+                        "producer": "example",
+                        "source_run": "missing-child",
+                        "properties": {},
+                        "status": "finished",
+                        "reason": "completed"
+                    }
+                ],
+                "sequences": [
+                    {
+                        "id": "sequence",
+                        "test_run": "run",
+                        "sequence_index": 1,
+                        "source_sequence": "sequence",
+                        "properties": {},
+                        "status": "finished",
+                        "reason": "completed"
+                    }
+                ],
+                "observations": [
+                    {
+                        "id": "observation",
+                        "test_sequence": "sequence",
+                        "observation_index": 1,
+                        "timestamp_micros": 1,
+                        "recorded_state": {
+                            "id": "state",
+                            "properties": {
+                                "common": true,
+                                "preferred": {},
+                                "fallback": {
+                                    "amount": 1
+                                }
+                            },
+                            "widgets": [],
+                            "capture": "complete"
+                        },
+                        "available_action_scope": "unknown",
+                        "available_actions": [],
+                        "artifacts": []
+                    }
+                ],
+                "actions": [],
+                "executions": []
+            }
+        },
+        {
+            "id": "null-value",
+            "label": "null-value",
+            "fingerprint": "02ec4253ee382a1911286ac338d80091f5cb66a6e8fec2cace490c8d176deb1f",
+            "evidence": {
+                "runs": [
+                    {
+                        "id": "run",
+                        "producer": "example",
+                        "source_run": "null-value",
+                        "properties": {},
+                        "status": "finished",
+                        "reason": "completed"
+                    }
+                ],
+                "sequences": [
+                    {
+                        "id": "sequence",
+                        "test_run": "run",
+                        "sequence_index": 1,
+                        "source_sequence": "sequence",
+                        "properties": {},
+                        "status": "finished",
+                        "reason": "completed"
+                    }
+                ],
+                "observations": [
+                    {
+                        "id": "observation",
+                        "test_sequence": "sequence",
+                        "observation_index": 1,
+                        "timestamp_micros": 1,
+                        "recorded_state": {
+                            "id": "state",
+                            "properties": {
+                                "common": true,
+                                "preferred": {
+                                    "amount": null
+                                },
+                                "fallback": {
+                                    "amount": 9
+                                }
+                            },
+                            "widgets": [],
+                            "capture": "complete"
+                        },
+                        "available_action_scope": "unknown",
+                        "available_actions": [],
+                        "artifacts": []
+                    }
+                ],
+                "actions": [],
+                "executions": []
+            }
+        },
+        {
+            "id": "fallback-null",
+            "label": "fallback-null",
+            "fingerprint": "02468741aefca7dc3d80e45505b764b87c6801e845a6a3259ddac3079e7dc820",
+            "evidence": {
+                "runs": [
+                    {
+                        "id": "run",
+                        "producer": "example",
+                        "source_run": "fallback-null",
+                        "properties": {},
+                        "status": "finished",
+                        "reason": "completed"
+                    }
+                ],
+                "sequences": [
+                    {
+                        "id": "sequence",
+                        "test_run": "run",
+                        "sequence_index": 1,
+                        "source_sequence": "sequence",
+                        "properties": {},
+                        "status": "finished",
+                        "reason": "completed"
+                    }
+                ],
+                "observations": [
+                    {
+                        "id": "observation",
+                        "test_sequence": "sequence",
+                        "observation_index": 1,
+                        "timestamp_micros": 1,
+                        "recorded_state": {
+                            "id": "state",
+                            "properties": {
+                                "common": true,
+                                "fallback": {
+                                    "amount": null
+                                }
+                            },
+                            "widgets": [],
+                            "capture": "complete"
+                        },
+                        "available_action_scope": "unknown",
+                        "available_actions": [],
+                        "artifacts": []
+                    }
+                ],
+                "actions": [],
+                "executions": []
+            }
+        },
+        {
+            "id": "preferred-value",
+            "label": "preferred-value",
+            "fingerprint": "b2d560702dbccb01b10b684e1de0e8afb41e39420b01c47b9019fe45e44b3c9e",
+            "evidence": {
+                "runs": [
+                    {
+                        "id": "run",
+                        "producer": "example",
+                        "source_run": "preferred-value",
+                        "properties": {},
+                        "status": "finished",
+                        "reason": "completed"
+                    }
+                ],
+                "sequences": [
+                    {
+                        "id": "sequence",
+                        "test_run": "run",
+                        "sequence_index": 1,
+                        "source_sequence": "sequence",
+                        "properties": {},
+                        "status": "finished",
+                        "reason": "completed"
+                    }
+                ],
+                "observations": [
+                    {
+                        "id": "observation",
+                        "test_sequence": "sequence",
+                        "observation_index": 1,
+                        "timestamp_micros": 1,
+                        "recorded_state": {
+                            "id": "state",
+                            "properties": {
+                                "common": true,
+                                "preferred": {
+                                    "amount": 1
+                                },
+                                "fallback": {
+                                    "amount": 9
+                                }
+                            },
+                            "widgets": [],
+                            "capture": "complete"
+                        },
+                        "available_action_scope": "unknown",
+                        "available_actions": [],
+                        "artifacts": []
+                    }
+                ],
+                "actions": [],
+                "executions": []
+            }
+        },
+        {
+            "id": "fallback-value",
+            "label": "fallback-value",
+            "fingerprint": "20f23367a2a35342dd990dd99912ecae77439d4d000b291d9b6b5423fc96e756",
+            "evidence": {
+                "runs": [
+                    {
+                        "id": "run",
+                        "producer": "example",
+                        "source_run": "fallback-value",
+                        "properties": {},
+                        "status": "finished",
+                        "reason": "completed"
+                    }
+                ],
+                "sequences": [
+                    {
+                        "id": "sequence",
+                        "test_run": "run",
+                        "sequence_index": 1,
+                        "source_sequence": "sequence",
+                        "properties": {},
+                        "status": "finished",
+                        "reason": "completed"
+                    }
+                ],
+                "observations": [
+                    {
+                        "id": "observation",
+                        "test_sequence": "sequence",
+                        "observation_index": 1,
+                        "timestamp_micros": 1,
+                        "recorded_state": {
+                            "id": "state",
+                            "properties": {
+                                "common": true,
+                                "fallback": {
+                                    "amount": 1
+                                }
+                            },
+                            "widgets": [],
+                            "capture": "complete"
+                        },
+                        "available_action_scope": "unknown",
+                        "available_actions": [],
+                        "artifacts": []
+                    }
+                ],
+                "actions": [],
+                "executions": []
+            }
+        }
+    ],
+    "selected_runs": [
+        {
+            "source": "missing",
+            "run": "run"
+        },
+        {
+            "source": "null-parent",
+            "run": "run"
+        },
+        {
+            "source": "missing-child",
+            "run": "run"
+        },
+        {
+            "source": "null-value",
+            "run": "run"
+        },
+        {
+            "source": "fallback-null",
+            "run": "run"
+        },
+        {
+            "source": "preferred-value",
+            "run": "run"
+        },
+        {
+            "source": "fallback-value",
+            "run": "run"
+        }
+    ]
+}

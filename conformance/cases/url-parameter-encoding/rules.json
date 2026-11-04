@@ -1,0 +1,20 @@
+{
+    "version": 1,
+    "name": "Url parameter encoding",
+    "state": [
+        {
+            "name": "address",
+            "keys": ["address"],
+            "required": true,
+            "transforms": [
+                {
+                    "op": "url",
+                    "remove_path_parameters": ["session", "a;b"],
+                    "remove_query": ["session"],
+                    "remove_fragment": true
+                }
+            ]
+        }
+    ],
+    "capture": "same"
+}

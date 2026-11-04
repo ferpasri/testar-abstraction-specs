@@ -4,7 +4,7 @@ Each case contains three files:
 
 | File            | Meaning                                                                                                                                    |
 | --------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
-| `input.json`    | Reconstructed evidence records and the selected test runs, with record collections represented as arrays.           |
+| `input.json`    | Reconstructed evidence records and the selected test runs, with record collections represented as arrays.                                  |
 | `rules.json`    | The abstraction rules applied to that evidence.                                                                                            |
 | `expected.json` | The expected observation groups, transition support, order links, unmatched observations, unlinked executions, and widget correspondences. |
 
@@ -32,6 +32,11 @@ The [manifest](manifest.json) lists every case and its compatibility identifiers
 | `loan-display-and-text` | Also compare result text to distinguish denied and approved results at the same address and title.                   |
 | `capture-ignore`        | Group the same observations when the rules explicitly ignore capture status.                                         |
 
+| `unicode-text-normalization` | Compare explicit whitespace and Unicode lowercase behavior while retaining distinct character compositions. |
+| `numeric-and-type-comparison` | Compare equivalent numeric forms while keeping booleans and strings distinct. |
+| `structured-value-order` | Ignore object-property order while retaining array order and repeated entries. |
+| `property-presence-and-fallbacks` | Select the first present property before following a nested path; distinguish missing values from null. |
+| `url-parameter-encoding` | Remove decoded path-parameter names while preserving malformed names, case distinctions, and literal plus signs; leave invalid addresses unmatched. |
 
 ## Action cases
 

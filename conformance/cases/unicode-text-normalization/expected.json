@@ -1,0 +1,68 @@
+{
+    "groups": [
+        [
+            {
+                "source": "spaced",
+                "run": "run",
+                "observation": "observation"
+            },
+            {
+                "source": "plain",
+                "run": "run",
+                "observation": "observation"
+            }
+        ],
+        [
+            {
+                "source": "combining",
+                "run": "run",
+                "observation": "observation"
+            }
+        ],
+        [
+            {
+                "source": "next-line",
+                "run": "run",
+                "observation": "observation"
+            }
+        ],
+        [
+            {
+                "source": "zero-width",
+                "run": "run",
+                "observation": "observation"
+            }
+        ],
+        [
+            {
+                "source": "dotted-uppercase",
+                "run": "run",
+                "observation": "observation"
+            },
+            {
+                "source": "dotted-lowercase",
+                "run": "run",
+                "observation": "observation"
+            }
+        ],
+        [
+            {
+                "source": "sharp-s",
+                "run": "run",
+                "observation": "observation"
+            }
+        ],
+        [
+            {
+                "source": "double-s",
+                "run": "run",
+                "observation": "observation"
+            }
+        ]
+    ],
+    "unmatched": [],
+    "transitions": [],
+    "observation_order_links": [],
+    "unlinked_executions": [],
+    "widget_correspondences": []
+}

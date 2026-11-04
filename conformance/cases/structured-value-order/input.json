@@ -1,0 +1,246 @@
+{
+    "sources": [
+        {
+            "id": "original",
+            "label": "original",
+            "fingerprint": "a70c66567bcebff9736c5d11566fca6a446ec0411bf1975ffa43577c87b5b171",
+            "evidence": {
+                "runs": [
+                    {
+                        "id": "run",
+                        "producer": "example",
+                        "source_run": "original",
+                        "properties": {},
+                        "status": "finished",
+                        "reason": "completed"
+                    }
+                ],
+                "sequences": [
+                    {
+                        "id": "sequence",
+                        "test_run": "run",
+                        "sequence_index": 1,
+                        "source_sequence": "sequence",
+                        "properties": {},
+                        "status": "finished",
+                        "reason": "completed"
+                    }
+                ],
+                "observations": [
+                    {
+                        "id": "observation",
+                        "test_sequence": "sequence",
+                        "observation_index": 1,
+                        "timestamp_micros": 1,
+                        "recorded_state": {
+                            "id": "state",
+                            "properties": {
+                                "value": {
+                                    "amount": 1,
+                                    "items": ["a", "b"],
+                                    "nested": {
+                                        "b": 2,
+                                        "a": 1
+                                    }
+                                }
+                            },
+                            "widgets": [],
+                            "capture": "complete"
+                        },
+                        "available_action_scope": "unknown",
+                        "available_actions": [],
+                        "artifacts": []
+                    }
+                ],
+                "actions": [],
+                "executions": []
+            }
+        },
+        {
+            "id": "reordered-object",
+            "label": "reordered-object",
+            "fingerprint": "553d0c645023652739245b9c389b8044aee6f74c1a25281bba1369d1a1d1be02",
+            "evidence": {
+                "runs": [
+                    {
+                        "id": "run",
+                        "producer": "example",
+                        "source_run": "reordered-object",
+                        "properties": {},
+                        "status": "finished",
+                        "reason": "completed"
+                    }
+                ],
+                "sequences": [
+                    {
+                        "id": "sequence",
+                        "test_run": "run",
+                        "sequence_index": 1,
+                        "source_sequence": "sequence",
+                        "properties": {},
+                        "status": "finished",
+                        "reason": "completed"
+                    }
+                ],
+                "observations": [
+                    {
+                        "id": "observation",
+                        "test_sequence": "sequence",
+                        "observation_index": 1,
+                        "timestamp_micros": 1,
+                        "recorded_state": {
+                            "id": "state",
+                            "properties": {
+                                "value": {
+                                    "nested": {
+                                        "a": 1.0,
+                                        "b": 2
+                                    },
+                                    "items": ["a", "b"],
+                                    "amount": 1.0
+                                }
+                            },
+                            "widgets": [],
+                            "capture": "complete"
+                        },
+                        "available_action_scope": "unknown",
+                        "available_actions": [],
+                        "artifacts": []
+                    }
+                ],
+                "actions": [],
+                "executions": []
+            }
+        },
+        {
+            "id": "reordered-array",
+            "label": "reordered-array",
+            "fingerprint": "a97eb211b93c0871ac7bf214fd5affc1b6026430640e72dae5575b4a414b1a1b",
+            "evidence": {
+                "runs": [
+                    {
+                        "id": "run",
+                        "producer": "example",
+                        "source_run": "reordered-array",
+                        "properties": {},
+                        "status": "finished",
+                        "reason": "completed"
+                    }
+                ],
+                "sequences": [
+                    {
+                        "id": "sequence",
+                        "test_run": "run",
+                        "sequence_index": 1,
+                        "source_sequence": "sequence",
+                        "properties": {},
+                        "status": "finished",
+                        "reason": "completed"
+                    }
+                ],
+                "observations": [
+                    {
+                        "id": "observation",
+                        "test_sequence": "sequence",
+                        "observation_index": 1,
+                        "timestamp_micros": 1,
+                        "recorded_state": {
+                            "id": "state",
+                            "properties": {
+                                "value": {
+                                    "amount": 1,
+                                    "items": ["b", "a"],
+                                    "nested": {
+                                        "a": 1,
+                                        "b": 2
+                                    }
+                                }
+                            },
+                            "widgets": [],
+                            "capture": "complete"
+                        },
+                        "available_action_scope": "unknown",
+                        "available_actions": [],
+                        "artifacts": []
+                    }
+                ],
+                "actions": [],
+                "executions": []
+            }
+        },
+        {
+            "id": "repeated-item",
+            "label": "repeated-item",
+            "fingerprint": "ba433729b7cc7f7d29e00153aacc6143c011f84a0dc82482a9cd38f90ab7b597",
+            "evidence": {
+                "runs": [
+                    {
+                        "id": "run",
+                        "producer": "example",
+                        "source_run": "repeated-item",
+                        "properties": {},
+                        "status": "finished",
+                        "reason": "completed"
+                    }
+                ],
+                "sequences": [
+                    {
+                        "id": "sequence",
+                        "test_run": "run",
+                        "sequence_index": 1,
+                        "source_sequence": "sequence",
+                        "properties": {},
+                        "status": "finished",
+                        "reason": "completed"
+                    }
+                ],
+                "observations": [
+                    {
+                        "id": "observation",
+                        "test_sequence": "sequence",
+                        "observation_index": 1,
+                        "timestamp_micros": 1,
+                        "recorded_state": {
+                            "id": "state",
+                            "properties": {
+                                "value": {
+                                    "amount": 1,
+                                    "items": ["a", "b", "b"],
+                                    "nested": {
+                                        "a": 1,
+                                        "b": 2
+                                    }
+                                }
+                            },
+                            "widgets": [],
+                            "capture": "complete"
+                        },
+                        "available_action_scope": "unknown",
+                        "available_actions": [],
+                        "artifacts": []
+                    }
+                ],
+                "actions": [],
+                "executions": []
+            }
+        }
+    ],
+    "selected_runs": [
+        {
+            "source": "original",
+            "run": "run"
+        },
+        {
+            "source": "reordered-object",
+            "run": "run"
+        },
+        {
+            "source": "reordered-array",
+            "run": "run"
+        },
+        {
+            "source": "repeated-item",
+            "run": "run"
+        }
+    ]
+}

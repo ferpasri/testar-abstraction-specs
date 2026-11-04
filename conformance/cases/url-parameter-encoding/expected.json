@@ -1,0 +1,53 @@
+{
+    "groups": [
+        [
+            {
+                "source": "encoded-name",
+                "run": "run",
+                "observation": "observation"
+            },
+            {
+                "source": "normalized",
+                "run": "run",
+                "observation": "observation"
+            },
+            {
+                "source": "encoded-separator",
+                "run": "run",
+                "observation": "observation"
+            }
+        ],
+        [
+            {
+                "source": "malformed-name",
+                "run": "run",
+                "observation": "observation"
+            }
+        ],
+        [
+            {
+                "source": "different-case",
+                "run": "run",
+                "observation": "observation"
+            }
+        ],
+        [
+            {
+                "source": "literal-plus",
+                "run": "run",
+                "observation": "observation"
+            }
+        ]
+    ],
+    "unmatched": [
+        {
+            "source": "invalid-address",
+            "run": "run",
+            "observation": "observation"
+        }
+    ],
+    "transitions": [],
+    "observation_order_links": [],
+    "unlinked_executions": [],
+    "widget_correspondences": []
+}

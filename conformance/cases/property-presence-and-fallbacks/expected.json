@@ -1,0 +1,50 @@
+{
+    "groups": [
+        [
+            {
+                "source": "missing",
+                "run": "run",
+                "observation": "observation"
+            },
+            {
+                "source": "null-parent",
+                "run": "run",
+                "observation": "observation"
+            },
+            {
+                "source": "missing-child",
+                "run": "run",
+                "observation": "observation"
+            }
+        ],
+        [
+            {
+                "source": "null-value",
+                "run": "run",
+                "observation": "observation"
+            },
+            {
+                "source": "fallback-null",
+                "run": "run",
+                "observation": "observation"
+            }
+        ],
+        [
+            {
+                "source": "preferred-value",
+                "run": "run",
+                "observation": "observation"
+            },
+            {
+                "source": "fallback-value",
+                "run": "run",
+                "observation": "observation"
+            }
+        ]
+    ],
+    "unmatched": [],
+    "transitions": [],
+    "observation_order_links": [],
+    "unlinked_executions": [],
+    "widget_correspondences": []
+}

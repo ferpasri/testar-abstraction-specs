@@ -1,0 +1,377 @@
+{
+    "sources": [
+        {
+            "id": "encoded-name",
+            "label": "encoded-name",
+            "fingerprint": "16ec4513ba867a5799aebbe394eb8a0a0f64f9ca23120c1bbc1e07a37bbd2c71",
+            "evidence": {
+                "runs": [
+                    {
+                        "id": "run",
+                        "producer": "example",
+                        "source_run": "encoded-name",
+                        "properties": {},
+                        "status": "finished",
+                        "reason": "completed"
+                    }
+                ],
+                "sequences": [
+                    {
+                        "id": "sequence",
+                        "test_run": "run",
+                        "sequence_index": 1,
+                        "source_sequence": "sequence",
+                        "properties": {},
+                        "status": "finished",
+                        "reason": "completed"
+                    }
+                ],
+                "observations": [
+                    {
+                        "id": "observation",
+                        "test_sequence": "sequence",
+                        "observation_index": 1,
+                        "timestamp_micros": 1,
+                        "recorded_state": {
+                            "id": "state",
+                            "properties": {
+                                "address": "https://sut.example/a;%73ession=one;keep=1?session=one&mode=edit#start"
+                            },
+                            "widgets": [],
+                            "capture": "complete"
+                        },
+                        "available_action_scope": "unknown",
+                        "available_actions": [],
+                        "artifacts": []
+                    }
+                ],
+                "actions": [],
+                "executions": []
+            }
+        },
+        {
+            "id": "normalized",
+            "label": "normalized",
+            "fingerprint": "0e9f77acd588d0fb5ad2b835cfcfcfc112c5226cfdf551017939e3d214e8ab31",
+            "evidence": {
+                "runs": [
+                    {
+                        "id": "run",
+                        "producer": "example",
+                        "source_run": "normalized",
+                        "properties": {},
+                        "status": "finished",
+                        "reason": "completed"
+                    }
+                ],
+                "sequences": [
+                    {
+                        "id": "sequence",
+                        "test_run": "run",
+                        "sequence_index": 1,
+                        "source_sequence": "sequence",
+                        "properties": {},
+                        "status": "finished",
+                        "reason": "completed"
+                    }
+                ],
+                "observations": [
+                    {
+                        "id": "observation",
+                        "test_sequence": "sequence",
+                        "observation_index": 1,
+                        "timestamp_micros": 1,
+                        "recorded_state": {
+                            "id": "state",
+                            "properties": {
+                                "address": "https://sut.example/a;keep=1?mode=edit"
+                            },
+                            "widgets": [],
+                            "capture": "complete"
+                        },
+                        "available_action_scope": "unknown",
+                        "available_actions": [],
+                        "artifacts": []
+                    }
+                ],
+                "actions": [],
+                "executions": []
+            }
+        },
+        {
+            "id": "encoded-separator",
+            "label": "encoded-separator",
+            "fingerprint": "78d381d39944e38f7f6588660db6a5be98c348d599f38bd25b658951a73f96f3",
+            "evidence": {
+                "runs": [
+                    {
+                        "id": "run",
+                        "producer": "example",
+                        "source_run": "encoded-separator",
+                        "properties": {},
+                        "status": "finished",
+                        "reason": "completed"
+                    }
+                ],
+                "sequences": [
+                    {
+                        "id": "sequence",
+                        "test_run": "run",
+                        "sequence_index": 1,
+                        "source_sequence": "sequence",
+                        "properties": {},
+                        "status": "finished",
+                        "reason": "completed"
+                    }
+                ],
+                "observations": [
+                    {
+                        "id": "observation",
+                        "test_sequence": "sequence",
+                        "observation_index": 1,
+                        "timestamp_micros": 1,
+                        "recorded_state": {
+                            "id": "state",
+                            "properties": {
+                                "address": "https://sut.example/a;%61%3Bb=two;keep=1?mode=edit"
+                            },
+                            "widgets": [],
+                            "capture": "complete"
+                        },
+                        "available_action_scope": "unknown",
+                        "available_actions": [],
+                        "artifacts": []
+                    }
+                ],
+                "actions": [],
+                "executions": []
+            }
+        },
+        {
+            "id": "malformed-name",
+            "label": "malformed-name",
+            "fingerprint": "e494f0151895631a6addb00bb2452f560c13cd56b3a12e2273d52699cec2b9db",
+            "evidence": {
+                "runs": [
+                    {
+                        "id": "run",
+                        "producer": "example",
+                        "source_run": "malformed-name",
+                        "properties": {},
+                        "status": "finished",
+                        "reason": "completed"
+                    }
+                ],
+                "sequences": [
+                    {
+                        "id": "sequence",
+                        "test_run": "run",
+                        "sequence_index": 1,
+                        "source_sequence": "sequence",
+                        "properties": {},
+                        "status": "finished",
+                        "reason": "completed"
+                    }
+                ],
+                "observations": [
+                    {
+                        "id": "observation",
+                        "test_sequence": "sequence",
+                        "observation_index": 1,
+                        "timestamp_micros": 1,
+                        "recorded_state": {
+                            "id": "state",
+                            "properties": {
+                                "address": "https://sut.example/a;session%ZZ=two;keep=1?mode=edit"
+                            },
+                            "widgets": [],
+                            "capture": "complete"
+                        },
+                        "available_action_scope": "unknown",
+                        "available_actions": [],
+                        "artifacts": []
+                    }
+                ],
+                "actions": [],
+                "executions": []
+            }
+        },
+        {
+            "id": "different-case",
+            "label": "different-case",
+            "fingerprint": "830b16a9028979ecd05507de721d75195d18d9c5c4bb4d0c1cb2f844bcefbe1a",
+            "evidence": {
+                "runs": [
+                    {
+                        "id": "run",
+                        "producer": "example",
+                        "source_run": "different-case",
+                        "properties": {},
+                        "status": "finished",
+                        "reason": "completed"
+                    }
+                ],
+                "sequences": [
+                    {
+                        "id": "sequence",
+                        "test_run": "run",
+                        "sequence_index": 1,
+                        "source_sequence": "sequence",
+                        "properties": {},
+                        "status": "finished",
+                        "reason": "completed"
+                    }
+                ],
+                "observations": [
+                    {
+                        "id": "observation",
+                        "test_sequence": "sequence",
+                        "observation_index": 1,
+                        "timestamp_micros": 1,
+                        "recorded_state": {
+                            "id": "state",
+                            "properties": {
+                                "address": "https://sut.example/a;Session=two;keep=1?mode=edit"
+                            },
+                            "widgets": [],
+                            "capture": "complete"
+                        },
+                        "available_action_scope": "unknown",
+                        "available_actions": [],
+                        "artifacts": []
+                    }
+                ],
+                "actions": [],
+                "executions": []
+            }
+        },
+        {
+            "id": "literal-plus",
+            "label": "literal-plus",
+            "fingerprint": "2d6cbe5123e883f7ea069e95bcd1479ca3faefec95dfcc94efac9438ebeb3483",
+            "evidence": {
+                "runs": [
+                    {
+                        "id": "run",
+                        "producer": "example",
+                        "source_run": "literal-plus",
+                        "properties": {},
+                        "status": "finished",
+                        "reason": "completed"
+                    }
+                ],
+                "sequences": [
+                    {
+                        "id": "sequence",
+                        "test_run": "run",
+                        "sequence_index": 1,
+                        "source_sequence": "sequence",
+                        "properties": {},
+                        "status": "finished",
+                        "reason": "completed"
+                    }
+                ],
+                "observations": [
+                    {
+                        "id": "observation",
+                        "test_sequence": "sequence",
+                        "observation_index": 1,
+                        "timestamp_micros": 1,
+                        "recorded_state": {
+                            "id": "state",
+                            "properties": {
+                                "address": "https://sut.example/a;ses+sion=two;keep=1?mode=edit"
+                            },
+                            "widgets": [],
+                            "capture": "complete"
+                        },
+                        "available_action_scope": "unknown",
+                        "available_actions": [],
+                        "artifacts": []
+                    }
+                ],
+                "actions": [],
+                "executions": []
+            }
+        },
+        {
+            "id": "invalid-address",
+            "label": "invalid-address",
+            "fingerprint": "9cc1ea69cbe035ebb17f13ec3c57818e5d1edcba880bddeea0a4a2f4efeaee2d",
+            "evidence": {
+                "runs": [
+                    {
+                        "id": "run",
+                        "producer": "example",
+                        "source_run": "invalid-address",
+                        "properties": {},
+                        "status": "finished",
+                        "reason": "completed"
+                    }
+                ],
+                "sequences": [
+                    {
+                        "id": "sequence",
+                        "test_run": "run",
+                        "sequence_index": 1,
+                        "source_sequence": "sequence",
+                        "properties": {},
+                        "status": "finished",
+                        "reason": "completed"
+                    }
+                ],
+                "observations": [
+                    {
+                        "id": "observation",
+                        "test_sequence": "sequence",
+                        "observation_index": 1,
+                        "timestamp_micros": 1,
+                        "recorded_state": {
+                            "id": "state",
+                            "properties": {
+                                "address": "not an absolute URL"
+                            },
+                            "widgets": [],
+                            "capture": "complete"
+                        },
+                        "available_action_scope": "unknown",
+                        "available_actions": [],
+                        "artifacts": []
+                    }
+                ],
+                "actions": [],
+                "executions": []
+            }
+        }
+    ],
+    "selected_runs": [
+        {
+            "source": "encoded-name",
+            "run": "run"
+        },
+        {
+            "source": "normalized",
+            "run": "run"
+        },
+        {
+            "source": "encoded-separator",
+            "run": "run"
+        },
+        {
+            "source": "malformed-name",
+            "run": "run"
+        },
+        {
+            "source": "different-case",
+            "run": "run"
+        },
+        {
+            "source": "literal-plus",
+            "run": "run"
+        },
+        {
+            "source": "invalid-address",
+            "run": "run"
+        }
+    ]
+}

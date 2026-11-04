@@ -1,0 +1,12 @@
+{
+    "version": 1,
+    "name": "Structured value order",
+    "state": [
+        {
+            "name": "value",
+            "keys": ["value"],
+            "required": true
+        }
+    ],
+    "capture": "same"
+}

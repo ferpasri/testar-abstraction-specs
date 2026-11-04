@@ -1,0 +1,35 @@
+{
+    "groups": [
+        [
+            {
+                "source": "original",
+                "run": "run",
+                "observation": "observation"
+            },
+            {
+                "source": "reordered-object",
+                "run": "run",
+                "observation": "observation"
+            }
+        ],
+        [
+            {
+                "source": "reordered-array",
+                "run": "run",
+                "observation": "observation"
+            }
+        ],
+        [
+            {
+                "source": "repeated-item",
+                "run": "run",
+                "observation": "observation"
+            }
+        ]
+    ],
+    "unmatched": [],
+    "transitions": [],
+    "observation_order_links": [],
+    "unlinked_executions": [],
+    "widget_correspondences": []
+}

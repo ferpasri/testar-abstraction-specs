@@ -14,7 +14,12 @@
                 "loan-display-changes",
                 "loan-structure-only",
                 "normalized-pages",
-                "unmatched-and-order"
+                "numeric-and-type-comparison",
+                "property-presence-and-fallbacks",
+                "structured-value-order",
+                "unicode-text-normalization",
+                "unmatched-and-order",
+                "url-parameter-encoding"
             ]
         },
         "actions": {

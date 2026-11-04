@@ -1,0 +1,324 @@
+{
+    "sources": [
+        {
+            "id": "integer",
+            "label": "integer",
+            "fingerprint": "616c889e8ae5a31442df35701caaafaf824995a0bbb0eb2975062849db9bf789",
+            "evidence": {
+                "runs": [
+                    {
+                        "id": "run",
+                        "producer": "example",
+                        "source_run": "integer",
+                        "properties": {},
+                        "status": "finished",
+                        "reason": "completed"
+                    }
+                ],
+                "sequences": [
+                    {
+                        "id": "sequence",
+                        "test_run": "run",
+                        "sequence_index": 1,
+                        "source_sequence": "sequence",
+                        "properties": {},
+                        "status": "finished",
+                        "reason": "completed"
+                    }
+                ],
+                "observations": [
+                    {
+                        "id": "observation",
+                        "test_sequence": "sequence",
+                        "observation_index": 1,
+                        "timestamp_micros": 1,
+                        "recorded_state": {
+                            "id": "state",
+                            "properties": {
+                                "value": 1
+                            },
+                            "widgets": [],
+                            "capture": "complete"
+                        },
+                        "available_action_scope": "unknown",
+                        "available_actions": [],
+                        "artifacts": []
+                    }
+                ],
+                "actions": [],
+                "executions": []
+            }
+        },
+        {
+            "id": "decimal",
+            "label": "decimal",
+            "fingerprint": "3708d0a2043b9660594e67d0bc6965e3b976179f13abea12717c1af8e2ab07c6",
+            "evidence": {
+                "runs": [
+                    {
+                        "id": "run",
+                        "producer": "example",
+                        "source_run": "decimal",
+                        "properties": {},
+                        "status": "finished",
+                        "reason": "completed"
+                    }
+                ],
+                "sequences": [
+                    {
+                        "id": "sequence",
+                        "test_run": "run",
+                        "sequence_index": 1,
+                        "source_sequence": "sequence",
+                        "properties": {},
+                        "status": "finished",
+                        "reason": "completed"
+                    }
+                ],
+                "observations": [
+                    {
+                        "id": "observation",
+                        "test_sequence": "sequence",
+                        "observation_index": 1,
+                        "timestamp_micros": 1,
+                        "recorded_state": {
+                            "id": "state",
+                            "properties": {
+                                "value": 1.0
+                            },
+                            "widgets": [],
+                            "capture": "complete"
+                        },
+                        "available_action_scope": "unknown",
+                        "available_actions": [],
+                        "artifacts": []
+                    }
+                ],
+                "actions": [],
+                "executions": []
+            }
+        },
+        {
+            "id": "boolean",
+            "label": "boolean",
+            "fingerprint": "e9ac8d03774e3e6cb5b46fc76a4942c8af8b0b655d2280130ebdbfb30044db9d",
+            "evidence": {
+                "runs": [
+                    {
+                        "id": "run",
+                        "producer": "example",
+                        "source_run": "boolean",
+                        "properties": {},
+                        "status": "finished",
+                        "reason": "completed"
+                    }
+                ],
+                "sequences": [
+                    {
+                        "id": "sequence",
+                        "test_run": "run",
+                        "sequence_index": 1,
+                        "source_sequence": "sequence",
+                        "properties": {},
+                        "status": "finished",
+                        "reason": "completed"
+                    }
+                ],
+                "observations": [
+                    {
+                        "id": "observation",
+                        "test_sequence": "sequence",
+                        "observation_index": 1,
+                        "timestamp_micros": 1,
+                        "recorded_state": {
+                            "id": "state",
+                            "properties": {
+                                "value": true
+                            },
+                            "widgets": [],
+                            "capture": "complete"
+                        },
+                        "available_action_scope": "unknown",
+                        "available_actions": [],
+                        "artifacts": []
+                    }
+                ],
+                "actions": [],
+                "executions": []
+            }
+        },
+        {
+            "id": "string",
+            "label": "string",
+            "fingerprint": "8774d3540d3cf8e1562ec2caf6671552344a61706166addb8f8baabbf40e3f93",
+            "evidence": {
+                "runs": [
+                    {
+                        "id": "run",
+                        "producer": "example",
+                        "source_run": "string",
+                        "properties": {},
+                        "status": "finished",
+                        "reason": "completed"
+                    }
+                ],
+                "sequences": [
+                    {
+                        "id": "sequence",
+                        "test_run": "run",
+                        "sequence_index": 1,
+                        "source_sequence": "sequence",
+                        "properties": {},
+                        "status": "finished",
+                        "reason": "completed"
+                    }
+                ],
+                "observations": [
+                    {
+                        "id": "observation",
+                        "test_sequence": "sequence",
+                        "observation_index": 1,
+                        "timestamp_micros": 1,
+                        "recorded_state": {
+                            "id": "state",
+                            "properties": {
+                                "value": "1"
+                            },
+                            "widgets": [],
+                            "capture": "complete"
+                        },
+                        "available_action_scope": "unknown",
+                        "available_actions": [],
+                        "artifacts": []
+                    }
+                ],
+                "actions": [],
+                "executions": []
+            }
+        },
+        {
+            "id": "zero",
+            "label": "zero",
+            "fingerprint": "5f13eac4a952a449fb59550e10e146c2ece25f564d20bd7819bb683a73710fb8",
+            "evidence": {
+                "runs": [
+                    {
+                        "id": "run",
+                        "producer": "example",
+                        "source_run": "zero",
+                        "properties": {},
+                        "status": "finished",
+                        "reason": "completed"
+                    }
+                ],
+                "sequences": [
+                    {
+                        "id": "sequence",
+                        "test_run": "run",
+                        "sequence_index": 1,
+                        "source_sequence": "sequence",
+                        "properties": {},
+                        "status": "finished",
+                        "reason": "completed"
+                    }
+                ],
+                "observations": [
+                    {
+                        "id": "observation",
+                        "test_sequence": "sequence",
+                        "observation_index": 1,
+                        "timestamp_micros": 1,
+                        "recorded_state": {
+                            "id": "state",
+                            "properties": {
+                                "value": 0
+                            },
+                            "widgets": [],
+                            "capture": "complete"
+                        },
+                        "available_action_scope": "unknown",
+                        "available_actions": [],
+                        "artifacts": []
+                    }
+                ],
+                "actions": [],
+                "executions": []
+            }
+        },
+        {
+            "id": "negative-zero",
+            "label": "negative-zero",
+            "fingerprint": "af516910cfdf1bf9c8b169c433d50a5db359a6c05d874d08f7b4fde37d1016e4",
+            "evidence": {
+                "runs": [
+                    {
+                        "id": "run",
+                        "producer": "example",
+                        "source_run": "negative-zero",
+                        "properties": {},
+                        "status": "finished",
+                        "reason": "completed"
+                    }
+                ],
+                "sequences": [
+                    {
+                        "id": "sequence",
+                        "test_run": "run",
+                        "sequence_index": 1,
+                        "source_sequence": "sequence",
+                        "properties": {},
+                        "status": "finished",
+                        "reason": "completed"
+                    }
+                ],
+                "observations": [
+                    {
+                        "id": "observation",
+                        "test_sequence": "sequence",
+                        "observation_index": 1,
+                        "timestamp_micros": 1,
+                        "recorded_state": {
+                            "id": "state",
+                            "properties": {
+                                "value": -0.0
+                            },
+                            "widgets": [],
+                            "capture": "complete"
+                        },
+                        "available_action_scope": "unknown",
+                        "available_actions": [],
+                        "artifacts": []
+                    }
+                ],
+                "actions": [],
+                "executions": []
+            }
+        }
+    ],
+    "selected_runs": [
+        {
+            "source": "integer",
+            "run": "run"
+        },
+        {
+            "source": "decimal",
+            "run": "run"
+        },
+        {
+            "source": "boolean",
+            "run": "run"
+        },
+        {
+            "source": "string",
+            "run": "run"
+        },
+        {
+            "source": "zero",
+            "run": "run"
+        },
+        {
+            "source": "negative-zero",
+            "run": "run"
+        }
+    ]
+}

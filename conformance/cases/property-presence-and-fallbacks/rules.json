@@ -1,0 +1,17 @@
+{
+    "version": 1,
+    "name": "Property presence and fallbacks",
+    "state": [
+        {
+            "name": "common",
+            "keys": ["common"],
+            "required": true
+        },
+        {
+            "name": "amount",
+            "keys": ["preferred", "fallback"],
+            "path": ["amount"]
+        }
+    ],
+    "capture": "same"
+}
