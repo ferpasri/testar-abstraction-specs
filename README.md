@@ -4,7 +4,7 @@ Shared abstraction language, behavior, and conformance cases for constructing ab
 
 Abstraction rules select which recorded state, widget, and action properties matter for comparison. Matching observations form abstract states; matching available actions and executions form abstract actions. Completed recorded transitions support abstract transitions. The model retains references to the original evidence.
 
-Implementations in different languages follow the same specification and cases. The TypeScript implementation serves browser and Node.js consumers. Native Java and Python implementations can provide abstraction to their corresponding ASM libraries.
+Implementations follow the same abstraction rules and verify their results against shared conformance cases.
 
 ## Repository contents
 
@@ -19,6 +19,4 @@ The [conformance manifest](conformance/manifest.json) records supported format i
 
 ## Use the shared cases
 
-Implementations obtain the cases from a published GitHub release of this repository. They reconstruct the generic inputs, apply the supplied rules, and compare their results with the expected memberships and relationships. Original evidence references are used for comparison; generated model IDs and display labels are implementation details.
-
-The cases are data files that any language can read. They do not require a JavaScript runtime or a dependency on the TypeScript implementation.
+The conformance cases contain language-independent inputs, rules, and expected results. Implementations obtain them from a published release, apply the rules, and compare the resulting memberships and relationships with the expectations. See the [case guide](conformance/README.md) for the input and comparison steps.

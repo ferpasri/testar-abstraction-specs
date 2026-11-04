@@ -6,4 +6,3 @@
 - [ ] Specify the generic boundary for matching a current observation and available actions alongside historical evidence.
 - [ ] Review identity and canonicalization requirements when consumers exchange generated model references.
 - [ ] Define a portable abstract-model exchange format when consumers need saved models.
-- [ ] Verify native Java and Python implementations against the shared suites.

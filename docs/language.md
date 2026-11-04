@@ -1,6 +1,6 @@
 # Abstraction language
 
-Rules select captured values for comparing observations and actions. Presets and custom definitions use the same interpreter. The [examples](examples.md) demonstrate complete policies; [compatibility](versioning.md) identifies the language version.
+Rules select captured values for comparing observations and actions. Presets and custom definitions use the same format. See the [examples](examples.md) for complete policies and [compatibility](versioning.md) for the shared identifiers.
 
 ## Definition
 
@@ -13,11 +13,11 @@ Rules select captured values for comparing observations and actions. Presets and
 | `widgets` | Optional widget fields, exclusions, hierarchy, and order rules.       |
 | `actions` | Optional action-comparison rules within each abstract source state.   |
 
-A definition selects at least one state field or a widget comparison. Unknown structural fields and duplicate comparison-field names are rejected. Syntax and processing limits are enforced by the parser and interpreter; see the [specification](SPEC.md#processing).
+A definition selects at least one state field or a widget comparison. Unknown structural fields and duplicate comparison-field names are rejected. Definitions follow the [processing limits](SPEC.md#processing-limits).
 
 ## Comparison fields
 
-Each field has a `name` and a nonempty `keys` list. Keys are literal property names tried in order; the first own property present supplies the value. `path` optionally follows nested own-property keys inside that selected value. `required` rejects a missing value; optional missing values remain distinct from JSON null. `transforms` applies the selected string operations in order.
+Each field has a `name` and a nonempty `keys` list. Keys are literal property names tried in order; the first property present in the supplied JSON object supplies the value. `path` optionally follows nested keys within that value. `required` rejects a missing value; optional missing values remain distinct from JSON null. `transforms` applies the selected string operations in order.
 
 | Operation             | Behavior                                                                      |
 | --------------------- | ----------------------------------------------------------------------------- |
@@ -42,7 +42,7 @@ String transforms reject non-string inputs. An observation with a missing requir
 
 `descendants: "exclude"` also excludes descendants of excluded widgets. `"keep"` retains them and attaches them to the nearest retained ancestor. `hierarchy: "tree"` compares retained parent-child relationships; `"flat"` compares a collection of descriptions. `order: "preserve"` retains captured order; `"sort"` normalizes it. Repeated descriptions retain their multiplicity.
 
-Unavailable widget capture leaves the observation unmatched. Equal capture statuses do not establish equal producer capture scopes. Widgets without selected captured values have no correspondence links; repeated descriptions retain their ambiguity. Comparing captured styles does not compute a visibility flag or filter hidden widgets. See the [style and text example](examples.md#captured-styles-and-result-text).
+Unavailable widget capture leaves the observation unmatched. Capture status and the recorded description of capture scope retain their separate meanings. Widget correspondences require selected captured values, and repeated descriptions retain their ambiguity. Style comparison uses the captured values; widget filtering follows the explicit exclusion rules. See the [style and text example](examples.md#captured-styles-and-result-text).
 
 ## Match actions
 
@@ -58,6 +58,6 @@ The optional `actions` section selects:
 
 Both parameter lists must use the same field names; their keys and transforms may differ. Each selected field list needs at least one captured value. Missing required fields, an unavailable bound target, or unsuitable values leave the action unmatched with a reason.
 
-An empty `actions` object compares only the operation. Omitting `actions` keeps endpoint-and-action-type transition grouping and produces no `actionEvidence` collection. No property or operation mapping is inferred from a tool name. Recorded IDs remain supporting references rather than cross-source matching values.
+An empty `actions` object compares only the operation. When `actions` is omitted, transitions are grouped by their endpoint states and exact recorded action type. Property and operation mappings follow the explicit rules. Recorded IDs identify supporting records; selected comparison values determine cross-source matching.
 
 The [specification](SPEC.md#match-available-actions-and-executions) defines recorded links, inferred matches, and ambiguous results. The [action examples](examples.md#match-actions) demonstrate operation mapping and parameter selection.

@@ -4,13 +4,22 @@ Each case contains three files:
 
 | File            | Meaning                                                                                                                                    |
 | --------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
-| `input.json`    | Generic reconstructed evidence records and the selected test runs. Maps are represented as arrays so any language can read them.           |
+| `input.json`    | Reconstructed evidence records and the selected test runs, with record collections represented as arrays.           |
 | `rules.json`    | The abstraction rules applied to that evidence.                                                                                            |
 | `expected.json` | The expected observation groups, transition support, order links, unmatched observations, unlinked executions, and widget correspondences. |
 
-These inputs describe records after an evidence reader has reconstructed a trace. They are separate from the original JSONL evidence-format conformance cases in `testar-evidence-specs`.
+`input.json` contains the evidence after an evidence reader has reconstructed a trace. Applying `rules.json` produces an abstract model. `expected.json` describes the memberships and relationships that model must contain.
 
-To run a case, turn each record array into a map keyed by its ID (`execution.id` for execution records), apply the rules to the selected runs, and compare the result with `expected.json`. Array order is ignored. Expected memberships use original-record references rather than implementation-generated group IDs or display labels.
+To run a case:
+
+1. Read the reconstructed records and selected runs from `input.json`.
+2. Apply the supplied abstraction rules.
+3. Compare the resulting groups and supporting records with `expected.json`.
+4. Repeat with source and record collection order reversed, and verify that the input records remain unchanged.
+
+Compare group memberships and support collections independently of their listing order. Widget order follows the supplied rules. Expected results use original-record references to identify the evidence supporting each relationship.
+
+The [manifest](manifest.json) lists every case and its compatibility identifiers.
 
 | Case                    | Behavior                                                                                                             |
 | ----------------------- | -------------------------------------------------------------------------------------------------------------------- |
@@ -23,11 +32,10 @@ To run a case, turn each record array into a map keyed by its ID (`execution.id`
 | `loan-display-and-text` | Also compare result text to distinguish denied and approved results at the same address and title.                   |
 | `capture-ignore`        | Group the same observations when the rules explicitly ignore capture status.                                         |
 
-The [manifest](manifest.json) lists the state and action suites and their compatibility identifiers. Each implementation runs these cases through its own public API. Verification also reverses source order and confirms that supplied records remain unchanged.
 
 ## Action cases
 
-`action-cases/` uses the same input and rules files. Its expected result describes abstract actions, availability references and scopes, execution references and statuses, recorded versus inferred relationships, ambiguity, and transition support. Source-state memberships replace generated state IDs. Diagnostics are checked for presence; generated abstract-action IDs and wording are not part of the portable expected result.
+`action-cases/` uses the same input and rules files. Its expected result describes abstract actions, availability references and scopes, execution references and statuses, recorded versus inferred relationships, ambiguity, and transition support. Source-state memberships identify the states in the expected result. Diagnostic fields indicate whether an explanation is required.
 
 | Case                        | Behavior                                                                                                                                                    |
 | --------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -39,14 +47,8 @@ The [manifest](manifest.json) lists the state and action suites and their compat
 | `execution-statuses`        | Preserve completed, failed, incomplete, and awaiting-result statuses; only a completed execution supports a transition.                                     |
 | `actions-scoped-by-state`   | Keep the same action description separate when it belongs to different abstract states.                                                                     |
 
-Action verification also reverses sources, selected runs, and record collection order, and confirms that original records remain unchanged.
+For action cases, also reverse the selected runs when checking order independence.
 
 ## Loan visibility example
 
 The three `loan-*` cases apply different rules to identical evidence: structure alone groups all observations, adding captured styles separates form and result, and adding result text separates the two results. All executions retain their original support. See the [worked example](../docs/examples.md#captured-styles-and-result-text) for the property distinctions.
-
-## Reading a case
-
-`input.json` is the reconstructed evidence supplied to abstraction; it is not an expected model and is not a raw JSONL trace. `rules.json` specifies how to compare those records. The implementation produces an abstract model, and `expected.json` describes the memberships and relationships that model must contain.
-
-Each listed case requires all three files. State cases and action cases have different expected-result projections, described above. Implementations obtain the files from this repository's release archive and record the selected release and archive digest. Shared fixtures are maintained here rather than copied into language repositories.

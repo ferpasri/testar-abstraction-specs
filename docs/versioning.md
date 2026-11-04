@@ -1,6 +1,6 @@
 # Compatibility and releases
 
-Published GitHub tags identify immutable revisions of the shared specification and cases. Implementations record the shared release they verify and the corresponding archive digest. A documentation change does not by itself change the meaning of rules.
+Published GitHub tags identify immutable revisions of the shared specification and cases. Implementations record the shared release they verify and the corresponding archive digest.
 
 ## Shared identifiers
 
@@ -24,5 +24,3 @@ A new release can add documentation or cases while retaining the existing langua
 2. Verify the cases against the affected implementations and update compatibility identifiers when behavior changes.
 3. Commit and push the reviewed specification and data.
 4. Create a GitHub release and tag for that revision.
-
-Consumers use the published release archive. These documents and data files need no language-specific build or runtime.
