@@ -1,0 +1,33 @@
+{
+    "case_format_version": 1,
+    "evidence_schema": 3,
+    "rule_language": 1,
+    "behavior_version": "1.2.0",
+    "suites": {
+        "states": {
+            "directory": "cases",
+            "cases": [
+                "capture-ignore",
+                "capture-same",
+                "filtered-widgets",
+                "loan-display-and-text",
+                "loan-display-changes",
+                "loan-structure-only",
+                "normalized-pages",
+                "unmatched-and-order"
+            ]
+        },
+        "actions": {
+            "directory": "action-cases",
+            "cases": [
+                "actions-scoped-by-state",
+                "ambiguous-targets",
+                "available-and-executed",
+                "execution-statuses",
+                "missing-targets",
+                "recorded-input-difference",
+                "selected-parameters"
+            ]
+        }
+    }
+}
