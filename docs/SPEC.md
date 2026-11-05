@@ -1,5 +1,7 @@
 # Abstraction specification
 
+The [terminology](terminology.md) defines derived model concepts. Recorded observations, states, actions, and execution lifecycle follow [Evidence Specs](https://github.com/ferpasri/testar-evidence-specs/blob/main/docs/terminology.md).
+
 ## Inputs
 
 A caller supplies reconstructed evidence sources, selected test runs, and abstraction rules. An evidence reader validates the original trace format and execution lifecycle before supplying these records.

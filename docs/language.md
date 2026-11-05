@@ -1,6 +1,6 @@
 # Abstraction language
 
-Rules select captured values for comparing observations and actions. Presets and custom definitions use the same format. See the [examples](examples.md) for complete policies and [compatibility](versioning.md) for the shared identifiers.
+Rules select captured values for comparing observations and actions. The [terminology](terminology.md) defines the resulting model and comparison terms. Presets and custom definitions use the same format. See the [examples](examples.md) for complete policies and [compatibility](versioning.md) for the shared identifiers.
 
 ## Definition
 

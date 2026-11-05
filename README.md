@@ -8,6 +8,7 @@ Implementations follow the same abstraction rules and verify their results again
 
 ## Repository contents
 
+- [Terminology](docs/terminology.md): abstraction, State Models, comparisons, and supporting records.
 - [Specification](docs/SPEC.md): inputs, matching behavior, supporting evidence, and processing limits.
 - [Abstraction language](docs/language.md): rule fields and normalization operations.
 - [Examples](docs/examples.md): policies illustrating different testing objectives.
